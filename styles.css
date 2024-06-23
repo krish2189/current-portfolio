@@ -1,0 +1,65 @@
+body {
+    font-style: italic;
+    font: 200;
+    overflow: hidden;
+
+}
+
+
+.main-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+    background-image: url(/plainblack.png);
+    animation: zoomIn 20s linear infinite;
+}
+
+.img-icon {
+  background: transparent;
+  object-fit:contain;
+}
+
+.img-icon:hover {
+    transform: scale(1.3);
+}
+
+
+
+p.name {
+    opacity: 0;
+    background-image: linear-gradient(to top, #0f0f26, #242464, #1e1e50);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    background-clip: text; /* Standard property */
+    color: transparent; /* Standard property */
+    animation: nameZoom 10s ease-in-out;
+}
+
+@keyframes nameZoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100%  {
+        transform: scale(5); /* Adjust final scale as needed */
+        opacity: 1;
+      }
+}
+
+
+@keyframes zoomIn {
+    0% {
+      background-size: auto 80%;
+    }
+    50% {
+      background-size: auto 100%; /* Reach normal size at the halfway point */
+    }
+    100% {
+      background-size: auto 80%; /* Zoom in to 120% at the end */
+    }
+  }
