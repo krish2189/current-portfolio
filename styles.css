@@ -15,7 +15,7 @@ body {
     background-size: cover; 
     background-position: center;
     height: 100vh;
-    background-image: url(/plainblack.png);
+    background-image: url(plainblack.png);
     animation: zoomIn 20s linear infinite;
 }
 
